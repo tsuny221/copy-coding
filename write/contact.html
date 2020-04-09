@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf8">
-  <title>Write-書くためのテーマ</title>
+  <title>Write-ページ</title>
   <link rel="stylesheet" href="style.css" >
   <script src="https://kit.fontawesome.com/f3fffa880e.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
         </div>
     </nav><!--gnav-wrap-->
 	<header class="page-header wrapper">
-    <div class="page-title">
+		<div class="page-title">
 			<a href="index.html" class="title">Write</a>
 			<p class="sub-title">書くためのテーマ</p>
 		</div>
@@ -38,54 +38,34 @@
 				<li><a href="contact.html" title="contact">お問い合わせ</a></li>
 			</ul>
 			<form role="search" method="get" class="search-form">
+				<i class="fas fa-search"></i>
 				<label>
-					<input type="search" class="search-field" name="s" value="s" placeholder="検索...">
+					<input type="search" class="search-field" name="" value="" placeholder="検索...">
 				</label>
 			</form>
-				<a href="#" class="search-icon"><i class="fas fa-search"></i></a>
 		</nav>
 	</header><!-- /header -->
-	<div class="main-visual wrapper" >
-		<img src="images/main.jpg" alt="ホーム画像" class="main-image">
-		<h2 class="main-visual-text">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</h2>
+
+	<div class="wrapper" >
+		<img src="images/contact.jpg" alt="ページ画像" class="contact-image">
+		<div class="page-visual">
+			<h1 class="title">お問い合わせ</h1>
+			<p class="text">フォームを使うには Contact Form 7 をインストールして下さい。</p>
+			<p class="text">このフォームはデモです。ここからメッセージを送ることはできません。</p>
+			<div class="form">
+				<p class="contact-text">お名前 (必須)</p><br>
+				<input type="name" name="name" value="" placeholder="" class="contact-input"><br>
+				<p class="contact-text">メールアドレス (必須)</p><br>
+				<input type="name" name="email" value="" placeholder="" class="contact-input"><br>
+				<p class="contact-text">題名</p><br>
+				<input type="name" name="title" value="" placeholder="" class="contact-input"><br>
+				<p class="contact-text">メッセージ本文</p><br>
+				<textarea name="message" class="contact-textarea"></textarea><br>
+				<input type="submit" name="submit" value="送信" class="submit-btn">
+			</div>
+		</div>
 	</div>
-	<article class="blog wrapper">
-		<div class="blog-content">
-			<p class="blog-date">2018年9月1日</p>
-			<div>
-				<h2 class="blog-title">書くためのテーマ</h2>
-				<p class="text">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
-			</div>
-		</div>
-		<div class="blog-content">
-			<p class="blog-date">2018年9月1日</p>
-			<div>
-				<h2 class="blog-title">書くためのテーマ</h2>
-				<p class="text">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
-			</div>
-		</div>
-		<div class="blog-content">
-			<p class="blog-date">2018年9月1日</p>
-			<div>
-				<h2 class="blog-title">書くためのテーマ</h2>
-				<p class="text">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
-			</div>
-		</div>
-		<div class="blog-content">
-			<p class="blog-date">2018年9月1日</p>
-			<div>
-				<h2 class="blog-title">書くためのテーマ</h2>
-				<p class="text">Writeは文章を書く人のためのミニマルなWordPressテーマです。装飾を極限まで省いたデザインは、あなたの文章を主役にします。</p>
-			</div>
-		</div>
-		<div class="page">
-			<a href="#"><<前へ</a>
-			<a href="#">1</a>
-			<a href="#">2</a>
-			<a href="#">3</a>
-			<a href="#">次へ>></a>
-		</div>
-	</article>
+	<div class="page-widget">
 	<div class="widget wrapper">
 		<div class="profile">
 		<div class="flex">
@@ -128,8 +108,8 @@
 				</label>
 		</form>
 		</div>
-
-    <footer>
+		</div><!-- /profile -->
+	<footer>
     	<div class="footer wrapper">
 	    	<div class="footer-sns">
 	    		<i class="fa fa-twitter"></i>
@@ -138,6 +118,6 @@
 	    	</div>
     	<p>Powerd by <span>WordPress</span> | Theme <span>Write</span> by Themegraphy</p>
     </div>
-    </footer>
+    </footer><!-- /footer -->
 </body>
 </html>
