@@ -1,0 +1,467 @@
+
+body {
+	font-size: 13px;
+	margin: 0 auto;
+    padding: 0px 0 0;
+    text-align: center;
+    background: #F6F6F6;
+    color: #515151;
+    font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+    line-height: 180%;
+    word-break: break-all;
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	margin: 13px 0px;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.strong {
+	font-weight: bold;
+}
+/*-------------------全体の枠----------------------*/
+#wrapper {
+    margin: 0;
+    padding: 0;
+    border-top: solid 8px #6CC6C4;
+}
+
+#headerWrapper,
+#contentsWrapper,
+#footerWrapper,
+#breadWrapper {
+    margin: 0 auto;
+    width: 920px;
+    text-align: left;
+}
+/*-------------------ヘッダー----------------------*/
+#header {
+	height: 200px;
+}
+
+/*ヘッダートップ*/
+.headerTop {
+	display: flex;
+	justify-content: space-between;
+}
+.siteTitle {
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+.description {
+	font-size: 8px;
+	margin: 8px 0px;
+}
+
+.tel {
+	font-size: 25.61px;
+	padding-left: 25px;
+	margin: 0px;
+	position: relative;
+}
+.tel-icon {
+	font-size: 20px;
+	position: absolute;
+	top: 48px;
+}
+.time {
+	font-size: 10px;
+	padding: 5px;
+	margin: 0px;
+	border: 1px #D6D6D6 solid;
+	text-align: center;
+}
+.time span {
+	color: #B22C00;
+}
+
+/*ナビゲーション*/
+
+.main-nav {
+	display: flex;
+	background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+	border: solid 1px #6CC6C4;
+	border-radius: 6px;
+	justify-content: space-around;
+	padding: 0;
+	position: relative;
+}
+.main-nav li{
+	width: 184px;
+	height: 72px;
+	text-align: center;
+	list-style: none;
+	border-right: #71C9C7 solid 1px;
+    border-left: #99E1DF solid 1px;
+}
+.main-nav li:hover {
+	background-image: linear-gradient(rgb(108,198,196) 0%,rgb(156,227,225) 100%);
+}
+.main-nav a {
+	color: #fff;
+	text-shadow: 1px 1px 2px #6CC6C4;
+}
+.titleJa {
+	font-size: 14px;
+	display: block;
+	padding-top: 14px;
+}
+.titleEn {
+	font-size: 10px;
+	display: block;
+    line-height: 10px;
+    font-weight: bold;
+}
+/*-------------------パンくずリスト----------------------*/
+.bread {
+	text-align: left;
+}
+.breadcrumb {
+  margin: 0px 0px -10px 0px;
+  padding: 5px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-size: 10px;
+}
+
+.breadcrumb li:after {/* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #515151;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #515151;/*色*/
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+/*-------------------コンテンツ----------------------*/
+
+#contents {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+	height: auto;
+}
+
+/*メイン*/
+main {
+	width: 640px;
+	order: 2;
+}
+
+.inner {
+	padding: 20px;
+	background-color: #fff;
+}
+
+.midashiText {
+	font-size: 123.1%;
+	font-weight: bold;
+	display: block;
+	line-height: 50px;
+	width: 600px;
+	height: 50px;
+	border-bottom: solid 3px #6CC6C4;
+	margin-bottom: 16px;
+}
+
+.news {
+	margin-bottom: 15px;
+	padding: 0px 10px 10px 10px;
+}
+.news dt {
+	float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.news dd {
+	padding: 10px 10px 10px 143px;
+	margin: 0;
+	font-size: 13px;
+	border-bottom: 1px #595959 dotted;
+}
+
+
+/*サイドバー*/
+
+aside {
+	width: 260px;
+	order: 1;
+}
+.menuList {
+	border: solid 1px #6CC6C4;
+	border-radius: 6px 6px 0px 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.menuTitle {
+	font-size: 16px;
+	color: #fff;
+	background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+	border-radius: 6px 6px 0px 0px;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 15px;
+}
+.menuList ul {
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	position: relative;
+}
+.menuList li {
+	list-style-type: none!important;
+	padding-left: 30px;
+	margin: 0px 15px;
+	border-bottom:1px #6CC6C4 solid;
+}
+.menuList li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0c8";
+	font-size: 10px;
+	position: absolute;
+	padding-top: 7px;
+	left: 2em;
+	color: #6CC6C4;
+}
+
+.menuList a {
+	display: block;
+	width: 209px;
+	color: #595959;
+	font-size: 14px;
+	padding: 8px 0px;
+	font-weight: bold;
+}
+.menuList a:hover {
+  color: #6CC6C4;
+}
+
+/*-------------------医院紹介----------------------*/
+.pageTitle {
+	margin: 0px;
+	background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+	padding: 20px 0 20px 20px;
+    height: 60px;
+    line-height: 70px;
+    border: solid 1px #6CC6C4;
+    color: #fff;
+    border-radius: 6px 6px 0px 0px;
+}
+.textBox {
+	padding: 10px;
+}
+main h3 {
+    color: #6CC6C4;
+    font-size: 1.17em;
+}
+.table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.table td, th{
+	padding: 10px;
+	border: solid #999 1px;
+    text-align: center;
+}
+.table th {
+	background-color: #D1D1D1;
+}
+/*-------------------スタッフ紹介----------------------*/
+.docterItem {
+	display: flex;
+	margin-bottom: 30px;
+
+}
+.docterProfile {
+	margin-left: 15px;
+}
+.docterName {
+	width: 200px;
+	text-align: center;
+    background: #6CC6C4;
+    color: #FFF;
+}
+/*-------------------アクセス----------------------*/
+.clinicProfile {
+	padding-top: 20px;
+	border-top: solid 3px #6CC6C4;
+	display: flex;
+}
+.clinicProfileText {
+	margin-left: 18px;
+}
+iframe {
+	margin-bottom: 10px;
+}
+/*-------------------フッター----------------------*/
+
+.footerList {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #6CC6C4;
+	font-size: 13px;
+	border-radius: 6px;
+	padding: 0px 3px;
+}
+.footerList li {
+	list-style-type: none!important;
+	padding-right: 15px;
+}
+
+.footerList li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0c8";
+	font-size: 15px;
+	padding: 0px 10px;
+	color: #fff;
+}
+.footerList a {
+	color: #fff;
+    line-height: 30px;
+}
+.footerList a:hover {
+ 	 text-decoration: underline;
+}
+
+.footer-address {
+	line-height: 25px;
+	text-align: right;
+	font-size: 13px;
+	border-bottom:2px #6CC6C4 solid;
+	padding-bottom: 13px;
+}
+
+.copyright {
+	line-height: 13px;
+	text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px;
+
+}
+
+@media (max-width: 768px) {
+
+#wrapper {
+	width: 100%;
+}
+#headerWrapper,
+#contentsWrapper,
+#footerWrapper,
+#breadWrapper {
+    width: 100%;
+}
+.mainImage,
+iframe {
+	width: 100%;
+}
+#header {
+	width: 100%;
+	height: auto;
+}
+.headerTop {
+	flex-direction: column;
+	text-align: center;
+}
+.siteTitle {
+	height: 45px;
+	margin-top: 0px;
+}
+.description {
+	margin: 0px;
+}
+
+.time {
+	width: 220px;
+	display: inline;
+}
+
+.tel-icon {
+	display: none;
+}
+.main-nav {
+	height: auto;
+	border: none;
+	flex-wrap: wrap;
+	background-image: none;
+	display: flex;
+	justify-content: flex-start;
+}
+.main-nav li{
+	border: solid 1px #6CC6C4;
+	border-radius: 6px;
+	width: 49%;
+	height: 72px;
+	border-right: #71C9C7 solid 1px;
+    border-left: #99E1DF solid 1px;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+}
+
+.clinicProfile {
+	flex-direction: column;
+	margin: 0 auto;
+}
+.accessImage {
+	width: 100%;
+	text-align: center;
+}
+
+.midashiText {
+	width: 100%;
+}
+aside {
+	padding: 10px;
+	width: auto;
+	order: 2;
+}
+.breadWrapper {
+	display: block;
+}
+#contents {
+	flex-direction: column;
+	margin: 0 auto;
+}
+main {
+	padding: 10px;
+	width: auto;
+	order: 1;
+}
+.news dt {
+	float: none;
+	padding: 10px 0px;
+	line-height: 20px;
+}
+.news dd {
+	padding: 10px;
+
+}
+}
+
+
+
+
+
+

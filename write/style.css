@@ -428,7 +428,9 @@ header,
 .search-field {
 	position: static;
 }
-
+.search-field {
+	display: none;
+}
 .page-visual {
 	position: static;
 	width: 100%;
