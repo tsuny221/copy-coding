@@ -13,21 +13,30 @@
 		<h1><img src="images/logo.png" alt="ロゴ画像" class="logo"></h1>
 		<nav>
 			<ul class="main-nav">
-				<li><a href="index.html" title="概要">概要</a></li>
-				<li><a href="setup.html" title="概要">準備</a></li>
-				<li><a href="safety.html" title="概要">安全</a></li>
-				<li><a href="financial.html" title="概要">マネープラン</a></li>
+				<li style="border-bottom: 2px #008489 solid;"><a href="index.html" title="概要" style="color:#008489;">概要</a></li>
+				<li><a href="setup.html" title="準備">準備</a></li>
+				<li><a href="safety.html" title="安全">安全</a></li>
+				<li><a href="financial.html" title="マネープラン">マネープラン</a></li>
 			</ul>
 		</nav>
 		</div>
 		<div class="header-right">
 			<p class="header-text">予想月収</p>
 			<p class="cost">¥85,327</p>
-			<button type="" class="header-buttun">はじめる</button>
-	</header>
+			<a href="" type="" class="header-button">はじめる</a>
+		 </div>
+	</header><!-- 固定ヘッダー -->
 	<div class="header-wrapper"></div><!-- fixed用の空白ー -->
-	</div><!-- 固定ヘッダー -->
 	<main>
+		<aside id="aside">
+			<ul>
+				<li style="border-bottom: 1px rgb(235, 235, 235) solid;"><a href="index.html" title="概要" style="color:#008489;">概要</a></li>
+				<li><a href="setup.html" title="準備">準備</a></li>
+				<li><a href="safety.html" title="安全">安全</a></li>
+				<li><a href="financial.html" title="マネープラン">マネープラン</a></li>
+			</ul>
+		</aside>
+		<button id="button"><img src="images/logo.png"></button><!-- ハンバーガーメニューー -->
 		<div class="main-visual">
 			<div class="check">
 				<div class="form-midashi">Airbnbホストになって、暮らしをレベルアップ</div>
@@ -45,7 +54,7 @@
 						<option value="share">ゲスト３</option>
 					</select>
 					<p class="cost">¥ 104,654<span>月あたり</span></p>
-					<button type="" class="start-buttun">はじめる</button>
+					<a href="" type="" class="start-button">はじめる</a>
 				</form>
 			</div>
 		</div><!-- メインビジュアルとフォーム -->
@@ -99,12 +108,12 @@
 						<a href="safety.html" class="link">ホストを守るAirbnbの仕組みをチェック</a>
 					</div>
 					<ul class="safety-check">
-						<li>予約前に政府発行の身分証明書を求める権限</li>
-						<li>ハウスルールに同意しないと泊まれない</li>
-						<li>過去の宿泊のレビューもばっちり読める</li>
-						<li>財物損害は¥100,000,000まで無料で補償</li>
-						<li>$1,000,000の賠償責任保険が無料で付帯</li>
-						<li>24時間365日対応グローバルカスタマーサポート</li>
+						<li><i class="fas fa-check"></i>予約前に政府発行の身分証明書を求める権限</li>
+						<li><i class="fas fa-check"></i>ハウスルールに同意しないと泊まれない</li>
+						<li><i class="fas fa-check"></i>過去の宿泊のレビューもばっちり読める</li>
+						<li><i class="fas fa-check"></i>財物損害は¥100,000,000まで無料で補償</li>
+						<li><i class="fas fa-check"></i>$1,000,000の賠償責任保険が無料で付帯</li>
+						<li><i class="fas fa-check"></i>24時間365日対応グローバルカスタマーサポート</li>
 					</ul>
 				</div>
 			</div><!-- 安全 -->
@@ -174,12 +183,12 @@
 				<div class="midashi1-border"></div>
 				<div class="midashi1">よくある質問</div>
 				<div class="question-contents">
-					<div class="question-content"><a href="" class="link">Airbnbホストになれるのはどんな人？</a></div>
-					<div class="question-content"><a href="" class="question link">家財破損があった場合、どのような補償がありますか？</a></div>
-					<div class="question-content"><a href="" class="link">予約前にゲストに求められる要件は？</a></div>
-					<div class="question-content"><a href="" class="link">リスティングの料金を選ぶには？</a></div>
-					<div class="question-content"><a href="" class="link">お部屋の掲載料はいくら？</a></div>
-					<div class="question-content"><a href="" class="link">料金設定の支援ツールはありますか？</a></div>
+					<div class="question-content"><a href="#modal-01" class="link">Airbnbホストになれるのはどんな人？</a></div>
+					<div class="question-content"><a href="#modal-02" class="question link">予約前にゲストに求められる要件は？</a></div>
+					<div class="question-content"><a href="#modal-03" class="link">お部屋の掲載料はいくら？</a></div>
+					<div class="question-content"><a href="#modal-04" class="link">家財破損があった場合、どのような補償がありますか？</a></div>
+					<div class="question-content"><a href="#modal-05" class="link">リスティングの料金を選ぶには？</a></div>
+					<div class="question-content"><a href="#modal-06" class="link">料金設定の支援ツールはありますか？</a></div>
 				</div>
 			</div><!-- よくある質問　-->
 			<div class="detail">
@@ -217,9 +226,70 @@
 		</section><!-- メインの記事　wrapperに入るもの-->
 		<div class="ad">
 				<div class="ad-midashi">収益化してみませんか？</div>
-				<a href="" class="ad-buttun">はじめる</a>
+				<a href="" class="ad-button">はじめる</a>
 			</div>
 		</div><!-- 広告 背景画像設定-->
+		<div class="modal-wrapper" id="modal-01">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">Airbnbホストになれるのはどんな人？</div>
+				      <p class="answer">一部の地域を除き、Airbnbでホスティングを始めるのはとても簡単です。リスティングの作成および掲載もすべて無料。 マンションやアパート、一軒家のまるまる貸切から個室、ツリーハウス、お城などはAirbnbで掲載している宿泊先タイプのほんの一例でしかありません。ホストに求められる詳しい条件は、安全、セキュリティ、信頼性に関するAirbnbコミュニティの基準、高評価レビュー獲得のポイントをまとめたホスピタリティの基準をチェックしてみましょう。</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+				<div class="modal-wrapper" id="modal-02">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">予約前にゲストに求められる要件は？</div>
+				      <p class="answer">Airbnbではご予約のみなさまに事前にいくつかの個人情報の入力をお願いしています。 ゲストは、予約をリクエストする前に必要事項をすべて記入しなければなりません。 これはホストが宿泊者の情報と連絡先を確認するためのものです。</p><p class="answer">Airbnbでは、ゲストに下記のような情報のご提出をお願いしています。 • 氏名 • メールアドレス • 認証済みの電話番号 • 自己紹介メッセージ • ハウスルールへの同意 • お支払い情報</p><p class="answer">ゲストにはプロフィール写真の公開も推奨していますが、これは必須というわけではありません。 さらにホストは、宿泊予約の前にAirbnbに身分証明書を提示するようゲストに求めることもできます。</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+				<div class="modal-wrapper" id="modal-03">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">お部屋の掲載料はいくら？</div>
+				      <p class="answer">Airbnbは利用登録もお部屋の掲載も完全に無料です。</p><p class="answer">予約が入った時点で通常3%をホストのみなさまからAirbnbサービス料として申し受け、運営費に充てています。</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+				<div class="modal-wrapper" id="modal-04">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">家財破損があった場合、どのような補償がありますか？</div>
+				      <p class="answer">「Airbnbホスト保証」とは、ゲストによる家財破損の被害総額が保証金を超える場合や保証金未設定の場合、ホストに最大$1,000,000までの補償をお支払いするプログラムのことです。</p><p class="answer">現金、有価証券、収集品、稀少価値のある芸術品、宝石、ペット、対人賠償責任は「Airbnbホスト保証」プログラムの適用対象外です。 ホストのみなさまには、自宅を貸し出す際に貴重品を安全な場所に保管または撤去するよう推奨しています。 また、摩耗や劣化が原因の破損も本プログラムの対象外となります。</p><p class="answer">「ホスト保証」の詳細は<a class="link">http://airbnb.com/guarantee</a>でご確認いただけます</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+				<div class="modal-wrapper" id="modal-05">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">リスティングの料金を選ぶには？</div>
+				      <p class="answer">料金選びは100%ホストの裁量に任されています。 値付けの目安が欲しい場合には、お住まいの都市やエリアで類似のリスティングを検索すると大体の相場感がつかめます。 追加料金 > - 清掃料金：清掃料金は、1泊あたりの宿泊料金に含めることも、料金設定で別途追加することもできます。 上> - その他の料金：宿泊料金とは別に料金（レートチェックイン、ペットなど）を請求したいときは、予約前にそれが有料であることをゲストに事前通告した上で、問題解決センターを通じてセキュアな環境で支払いを請求するようにしましょう。</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+				<div class="modal-wrapper" id="modal-06">
+				  <a href="#!" class="modal-overlay"></a>
+				  <div class="modal-window">
+				  	<a href="#!" class="modal-close">×</a>
+				    <div class="modal-content">
+				    <div class="midashi2">料金設定の支援ツールはありますか？</div>
+				      <p class="answer">Airbnbのスマートプライシングを使うと、類似のお部屋の需要変動に合わせて料金を自動的に値上げしたり値下げしたりすることができます。</p><p class="answer">Airbnbのスマートプライシングを使うと、類似のお部屋の需要変動に合わせて料金を自動的に値上げしたり値下げしたりすることができます。</p><p class="answer">Airbnbのスマートプライシングを使うと、類似のお部屋の需要変動に合わせて料金を自動的に値上げしたり値下げしたりすることができます。</p>
+				    </div>
+				  </div>
+				</div><!--　回答モーダル　-->
+			</main>
 		<footer class="wrapper">
 			<div class="footer-top">
 				<div class="footer-list">
@@ -276,7 +346,7 @@
 				</div>
 			</div>
 		</footer>
-
-	</main>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ 		 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

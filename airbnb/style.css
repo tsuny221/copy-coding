@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -48,7 +48,12 @@ p {
 .statistics,
 .airbnb,
 .question,
-.detail {
+.detail,
+.prepare,
+.control,
+.pr,
+.slogan,
+.support {
 	margin-bottom: 80px;
 }
 
@@ -58,6 +63,7 @@ p {
 	font-family: var(--font-font_family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif);
 	font-weight: 800;
 }
+
 .midashi1{
 	font-weight: 800;
 	color: #333333;
@@ -79,7 +85,7 @@ p {
     font-weight: 800;
     line-height: 1.25em;
     color: #484848;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 .midashi3{
 	font-size: 4.2rem;
@@ -111,7 +117,7 @@ header {
 	border: 1px rgb(235, 235, 235) solid;
 	background-color: #fff;
 	position: fixed;
-	z-index: 99;
+	z-index: 50;
 }
 .header-left {
 	display: flex;
@@ -146,7 +152,7 @@ header {
 	height: 80px;
 	padding: 0px;
 }
-.header-buttun {
+.header-button {
 	height: 36px;
 	background-color: #FF5A5F;
 	color: #fff;
@@ -162,6 +168,10 @@ header .cost {
 .header-text {
 	font-size: 1rem;
 	margin: 28px 15px;
+}
+#aside,
+button {
+	display: none;
 }
 
 /*--------------------------- メインビジュアル　------------------------*/
@@ -230,8 +240,9 @@ header .cost {
 	font-size: 0.8rem;
 	font-weight: normal;
 }
-.start-buttun {
-	width: 100%;
+.start-button {
+	display: block;
+	text-align: center;
 	background-color: #FF5A5F;
 	color: #fff;
 	font-weight: 800;
@@ -300,6 +311,10 @@ blockquote {
 .safety-check li {
 	margin-bottom: 16px;
 }
+.safety-check i {
+	padding-right: 10px;
+	color: #008489;
+}
 .sudden-image {
 	width: 100%;
 	padding-bottom: 50px;
@@ -338,6 +353,77 @@ blockquote {
 	padding: 24px 0px;
 	margin-left: 10px;
 	border-bottom: 1px rgb(235, 235, 235) solid;
+}
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 60px 10px;
+  text-align: center;
+}
+/*--------------------------- モーダルウィンドウ　------------------------*/
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  padding: 32px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle;
+  text-align: left;
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  color: #95979c;
+  font-size: 35px;
+  line-height: 10px;
+  text-decoration: none;
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38;
 }
 /*---------------------------　ポスティング詳細について　------------------------*/
 .detail-contents {
@@ -403,7 +489,7 @@ blockquote {
 	color: #fff;
 
 }
-.ad-buttun {
+.ad-button {
 	color: #766767;
 	position: absolute;
 	left: 5%;
@@ -440,6 +526,92 @@ footer {
 	padding: 0px 8px;
 	color: #767676;
 }
+/*---------------------------!!!!!!!1 準備サイト!!!!!!!!!　------------------------*/
+.prepare {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10%;
+	text-align: center;
+}
+.prepare .midashi1 {
+	margin: 0px;
+}
+.prepare p {
+	font-size: 1.3rem;
+	margin: 0px;
+	padding-bottom: 50px;
+}
+.prepare .text1 {
+	font-size: 1rem;
+}
+.setup-button {
+	height: 36px;
+	background-color: #FF5A5F;
+	color: #fff;
+	font-weight: 800;
+	font-size: 1rem;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.setup-image img{
+	width: 100%;
+	object-fit: cover;
+	margin: 10% 0px;
+}
+
+/*--------------------------- コントロール　------------------------*/
+.control-contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.control-content {
+	margin-bottom: 10%;
+	width: 45%;
+}
+.icon {
+	width: 10%;
+}
+/*--------------------------- PR　------------------------*/
+.pr-contents {
+	display: flex;
+	justify-content: space-between;
+}
+.pr-content {
+	width:30%;
+}
+.pr img{
+	width: 100%;
+	object-fit: cover;
+	margin: 10% 0px;
+}
+/*--------------------------- サポート　------------------------*/
+.support-content {
+	display: flex;
+	justify-content: space-between;
+}
+.support img {
+	width: 443px;
+	object-fit: cover;
+	margin: 3% 0px;
+}
+.support-text {
+	margin-top: 150px;
+	width: 433px;
+}
+/*--------------------------- スローガン　------------------------*/
+.slogan {
+	padding: 7%;
+	text-align: center;
+	border-top: 1px rgb(235, 235, 235) solid;
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	font-weight: bold;
+}
+.slogan .midashi2 {
+	font-size: 2rem;
+}
+
 /*--------------------------- レスポンシブ　------------------------*/
 
 @media (max-width: 1200px) {
@@ -447,6 +619,7 @@ footer {
 body {
     line-height: 1;
 }
+
 .wrapper {
 	width: 100%;
 	padding: 0px 4%;
@@ -467,23 +640,67 @@ header {
 }
 .header-wrapper {
 	display: none;
+	margin-top: 10%;
 }
+
+/*--------------------------- ハンバーガーメニュー　------------------------*/
+
+#aside {
+	display: block;
+	background-color: #fff;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: -100vh;
+	left: 0;
+	position: fixed;
+	z-index: 80;
+}
+
+#aside ul {
+	margin: 0;
+	padding: 88px 0px 0px 48px;
+}
+#aside a {
+	font-size: 14px;
+	color: #484848;
+	font-weight: 600;
+	line-height: 4rem;
+	list-style: none;
+}
+#aside a:hover {
+	border-bottom: 1px #484848 solid;
+}
+button {
+	display: block;
+}
+button img{
+	width: 32px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	z-index: 99;
+}
+
+
+
 .form-midashi {
+	font-size: 2.2rem;
 	color: #fff;
 	width: 100%;
-	text-align: center;
-	padding-top: 200px;
-	padding: 150px 4% 50px 4%;
+	text-align: left;
+	padding: 20% 4% 30px 4%;
 	margin: 0px;
-	background-image: url(images/main-visual.jpg);
+	background-image: url(images/main-visual.jpg),linear-gradient(white, gray);
+	background-blend-mode: multiply;
 	background-size: cover;
 	background-position: top;
 }
 .main-visual {
 	position: static;
 	width: 100%;
-	margin-top: 20px;
 	height: auto;
+
 }
 .main-visual-form {
 	width: 100%;
@@ -514,7 +731,12 @@ header {
 .statistics,
 .airbnb,
 .question,
-.detail {
+.detail,
+.prepare,
+.control,
+.pr,
+.support,
+.slogan {
 	margin-bottom: 60px;
 }
 
@@ -524,7 +746,10 @@ header {
 .safety-contents,
 .financial-contents,
 .statistics-contents,
-.airbnb-contents {
+.airbnb-contents,
+.control-contents,
+.pr-contents,
+.support-content {
 	flex-direction: column;
 }
 .description-contents,
@@ -534,7 +759,12 @@ header {
 .safety-check,
 .financial-content,
 .statistics-content,
-.airbnb-content {
+.airbnb-content,
+.control-content,
+.pr-content,
+.support-content,
+.support-text,
+.support img {
 	width: 100%;
 	margin-bottom: 20px;
 	text-align: left;
@@ -588,8 +818,34 @@ blockquote {
 	top: 60%;
 	padding: 20px 22px;
 }
+/*--------------------------- 準備サイト　------------------------*/
 
+.prepare {
+	text-align: left;
+	width: 100%;
 }
+.prepare p {
+	font-size: 1.2rem;
+}
+.setup-image img{
+	width: 100%;
+	object-fit: cover;
+	margin-top: 10%;
+}
+.setup-image img {
+	width: 100%;
+	height: 450px;
+}
+.support-text {
+	margin: 0px;
+}
+}
+
+
+
+
+
+
 @media(max-width: 700px){
 body {
     font-size: 10px;
@@ -629,6 +885,34 @@ footer span {
 }
 .detail .link {
 	display: none;
+}
+
+.modal-wrapper {
+	padding: 0px;
+	margin: 0px;
+}
+
+.modal-window {
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	box-shadow: none;
+}
+.modal-wrapper .modal-window .modal-content {
+  width: 100%;
+  height: auto;
+}
+
+.modal-overlay {
+	display: none;
+}
+/*--------------------------- 準備サイト　------------------------*/
+.slogan {
+	text-align: left;
+	padding: 10% 0px;
+}
+.slogan .midashi2 {
+	font-size: 1.3rem;
 }
 
 }
