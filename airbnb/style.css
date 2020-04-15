@@ -53,7 +53,10 @@ p {
 .control,
 .pr,
 .slogan,
-.support {
+.support,
+.cost-table,
+.point,
+.financial-form {
 	margin-bottom: 80px;
 }
 
@@ -267,6 +270,10 @@ button {
 }
 .setup-content {
 	width: 30%;
+}
+.setup-content i {
+	font-size: 3rem;
+	padding-right: 10px;
 }
 .check-icon {
 	font-size: 3.2rem;
@@ -527,8 +534,16 @@ footer {
 	color: #767676;
 }
 /*---------------------------!!!!!!!1 準備サイト!!!!!!!!!　------------------------*/
+.background-gray {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 800px;
+	background-color: rgb(235, 235, 235);
+	z-index: -99;
+}
 .prepare {
-	width: 70%;
+	width: 77%;
 	margin: 0 auto;
 	margin-top: 10%;
 	text-align: center;
@@ -611,7 +626,64 @@ footer {
 .slogan .midashi2 {
 	font-size: 2rem;
 }
+/*---------------------------!!!!!!! 安全サイト!!!!!!!!!　------------------------*/
+.point {
+	display: flex;
+	justify-content: space-between;
+}
+.point-content {
+	display: flex;
+	margin-bottom: 10%;
+}
+.point .midashi2 {
+	font-size: 1.5rem;
+	margin: 10px 0px 0px 0px;
+}
+.point i {
+	font-size: 50px;
+	padding-right: 10px;
+}
+/*--------------------------- 表　------------------------*/
 
+th {
+	border-bottom: 1px rgb(235, 235, 235) solid;
+    padding: 30px 50px;
+}
+td {
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	padding: 30px 50px;
+}
+.td-icon  {
+	text-align: center;
+}
+.table-text {
+	text-align: center;
+}
+.table-border {
+	border-left: 1px rgb(235, 235, 235) solid;
+	border-right: 1px rgb(235, 235, 235) solid;
+	box-shadow: 8px 0 8px -4px rgba(219, 219, 219, 0.4), -8px 0 8px -4px rgba(219, 219, 219, 0.4);
+
+}
+.update {
+	font-size: 0.8rem;
+	margin: 0px 0px 20% 0px;
+}
+
+/*---------------------------!!!!!!!財政サイト!!!!!!!!!　------------------------*/
+.financial-form {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10%;
+	border: 1px rgb(235, 235, 235) solid;
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
+}
+.financial-form form {
+	padding: 80px 120px 92px;
+}
+.financial01-image {
+	width: 433px;
+}
 /*--------------------------- レスポンシブ　------------------------*/
 
 @media (max-width: 1200px) {
@@ -736,7 +808,10 @@ button img{
 .control,
 .pr,
 .support,
-.slogan {
+.slogan,
+.cost-table,
+.point,
+.financial-form {
 	margin-bottom: 60px;
 }
 
@@ -749,7 +824,8 @@ button img{
 .airbnb-contents,
 .control-contents,
 .pr-contents,
-.support-content {
+.support-content,
+.point {
 	flex-direction: column;
 }
 .description-contents,
@@ -764,7 +840,8 @@ button img{
 .pr-content,
 .support-content,
 .support-text,
-.support img {
+.support img,
+.point {
 	width: 100%;
 	margin-bottom: 20px;
 	text-align: left;
@@ -819,8 +896,11 @@ blockquote {
 	padding: 20px 22px;
 }
 /*--------------------------- 準備サイト　------------------------*/
-
+.background-gray {
+	height: 90%;
+}
 .prepare {
+	padding-top: 10%;
 	text-align: left;
 	width: 100%;
 }
@@ -838,6 +918,11 @@ blockquote {
 }
 .support-text {
 	margin: 0px;
+}
+
+.financial-form form{
+	padding: 10px;
+
 }
 }
 
@@ -915,6 +1000,36 @@ footer span {
 	font-size: 1.3rem;
 }
 
+td {
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	width: 30vh;
+	box-shadow: none;
+}
+th {
+	width: 30vh;
+	box-shadow: none;
+}
+table {
+	overflow: scroll;
+	table-layout: fixed;
+	width: 100%;
+}
+.table-border {
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+
+}
+.table-fixed {
+	width: 30vh;
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 8px 0 8px -4px rgba(219, 219, 219, 0.4);
+	font-size: 1rem;
+	padding: 0px 10px;
+}
 }
 
 
