@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://kit.fontawesome.com/f3fffa880e.js" crossorigin="anonymous"></script>
 </head>
-<header class="header">
+<body>
+<header id="header">
 	<div class="header__inner">
 		<div class="logo header__logo">
-			<a href="index.html" class="logo__link"><span class="logo__link-green">JIN</span> Demo Site 4</a>
+			<a href="index.html" class="logo__link">
+				<span class="logo__link-green">JIN</span> Demo Site 4</a>
 		</div><!-- /.header__logo -->
 		<nav class="nav header__nav">
 			<ul class="nav__items">
@@ -25,7 +27,7 @@
 </header><!-- /.header -->
 <div class="content content--has-column">
 	<main class="content__main">
-		<article>
+		<article class="fadein">
 			<div class="cards cards--col2">
 				<a href="" class="cards__item card">
 					<span class="card__badge">JINのデザイン</span>
@@ -68,16 +70,16 @@
 			</div><!-- /.cards-->
 		</article>
 	</main><!-- /.content__main -->
-	<aside class="content__side">
+	<aside class="content__side fadein">
 		<div class="widget widget-theme">
 			<div class="widget__items">
 						<div class="widget-theme-midashi">WordPressテーマ「JIN」</div>
-						<diV class="widget-theme-wrapper">
+						<div class="widget-theme-wrapper">
 							<img src="images/demo_banner.png" class="widget-theme__img">
 							<p class="widget__text">「アフィリエイト」と「SEO」に必要な機能を全て詰め込んだテーマが完成。売れるサイト作りを確実に後押しします。</p>
-						</diV>
+						</div>
 						<div class="download">
-							<a href="#" class="btn btn_red">今すぐダウンロード</a>
+							<a href="" class="btn btn_red">今すぐダウンロード</a>
 						</div>
 			</div>
 		</div><!-- /.widget-theme -->
@@ -172,7 +174,6 @@
 		<div class="widget widget-recommend">
 			<div class="widget-wrapper">
 				<div class="widget-title">RECOMMEND</div>
-				</a><!-- /.post -->
 					<a href="" class="post recent-post">
 					<img src="images/jin1.jpg" alt="" class="post__img">
 					<div class="post__text">JINはデザインインポートに対応！自分好みのデザインに「着せ替え」できる</div>
@@ -247,7 +248,7 @@
 		</div><!-- /.footer__inner -->
 	</div><!-- /.footer -->
 </footer>
-<footer>
-<body>
+ <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
